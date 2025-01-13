@@ -1,15 +1,15 @@
-import React from 'react';
+// import React from 'react';
 
-import OutputScreenRow from './outputScreenRow.js';
+// import OutputScreenRow from './outputScreenRow.js';
 
-const OutputScreen = (props) => {
+// const OutputScreen = (props) => {
 
-    return (
-        <div classname = "screen">
-            <OutputScreenRow value = {props.question}/>
-            <OutputScreenRow value = {props.answer}/>
-        </div>
-    )
-}
+//     return (
+//         <div classname = "screen">
+//             <OutputScreenRow value = {props.question}/>
+//             <OutputScreenRow value = {props.answer}/>
+//         </div>
+//     )
+// }
 
-export default OutputScreen;
+// export default OutputScreen;

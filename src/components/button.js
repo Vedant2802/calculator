@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
-const Button = (props) => {
-  return (
-    <input type="button" value={props.label} onClick={props.handleClick} />
-  );
-};
+// const Button = (props) => {
+//   return (
+//     <input type="button" value={props.label} onClick={props.handleClick} />
+//   );
+// };
 
-export default Button;
+// export default Button;

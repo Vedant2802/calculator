@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable default-case */
+import React, { useReducer } from "react";
+import "./index.css";
 
-function App() {
+const App = () => {
+  function reducer(state, action) {
+    switch (action.type) {
+      case "increment":
+        return {
+          count: state.count + 1,
+        };
+      case "decrement":
+        return {
+          count: state.count - 1,
+        };
+      default:
+        return state;
+    }
+    // return { count: state.count + 1 };
+  }
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  // const [count, setCount] = useState(0);
+
+  function increment() {
+    // setCount(count + 1);
+    dispatch({ type: "increment" });
+  }
+
+  function decrement() {
+    // setCount(count - 1);
+    dispatch({ type: "decrement" });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={increment} className="p-4 b-4">
+        Initial Count
+      </button>
+      <span>{state.count}</span>
+      <button onClick={decrement}>Final Count</button>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-const CalculatorTitle = (props) => {
-  return <div className="calculator-title">{props.value}</div>;
-};
+// const CalculatorTitle = (props) => {
+//   return <div className="calculator-title">{props.value}</div>;
+// };
 
-export default CalculatorTitle;
+// export default CalculatorTitle;
