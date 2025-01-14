@@ -1,4 +1,4 @@
-*{
+/* *{
   margin:0px;
   padding:0px;
   border-radius: 15px;
@@ -55,4 +55,11 @@ input[type='button']:active{
   color:white;
   padding: 10px;
   text-align: right;
+} */
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50%;
 }
